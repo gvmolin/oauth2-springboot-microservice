@@ -1,5 +1,6 @@
 package com.oauth2proj.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.oauth2proj.utils.common.BaseEntity;
 
 import jakarta.persistence.Column;
@@ -16,7 +17,10 @@ public class UserModel extends BaseEntity{
 	@Column(name = "username")
 	public String username;
 
+	@JsonIgnore
 	@Column(name = "password")
 	public String password;
+
+	
 
 }
