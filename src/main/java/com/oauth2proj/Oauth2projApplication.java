@@ -10,6 +10,7 @@ import com.oauth2proj.utils.security.RsaTools;
 @SpringBootApplication
 public class Oauth2projApplication {
 
+    @SuppressWarnings("UseSpecificCatch")
 	public static void main(String[] args) {
         Logger log = LogManager.getLogger(Oauth2projApplication.class);
 
